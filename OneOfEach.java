@@ -11,46 +11,23 @@ public class OneOfEach {
 	boolean girlChild = false;
 	double randomNum = Math.random();
 
-	if (randomNum >= 0.5) {
-		System.out.print("g ");
-		girlChild = true;
-		numOfChildren++;
-		;
-	}		
-
-	else {
-		System.out.print("b ");
-		numOfChildren++;
-		boyChild = true;
-	}
-	
-
-
-	while  (girlChild != boyChild) {
+	while  (!(girlChild && boyChild)) {
 		
 		randomNum = Math.random();
 
-		if (randomNum >= 0.5) {
+		if (randomNum < 0.5) {
 		System.out.print("g ");
 		girlChild = true;
-		numOfChildren++;
-				
 		}
 		
 		else {
 		System.out.print("b ");
 		boyChild = true;
-		numOfChildren++;
-		
 		} 	
-	
+	numOfChildren++;	
 	}
 	
-	System.out.println();
 	System.out.println("You made it... and now you have " + numOfChildren + " children");
-
-
-
 
 	}
 }
