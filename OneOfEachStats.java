@@ -73,7 +73,7 @@ public class OneOfEachStats {
 	}	
 	
 	else {
-		if (max == numberOf2Children ) {
+		if (max == numberOf3Children ) {
 		maxStr = maxStr + "3.";	
 		}
 		
